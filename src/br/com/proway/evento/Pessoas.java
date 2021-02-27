@@ -1,4 +1,4 @@
-package selecao;
+package br.com.proway.evento;
 
 import java.util.Collections;
 import java.util.HashSet;

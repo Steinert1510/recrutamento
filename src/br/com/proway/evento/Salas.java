@@ -1,4 +1,4 @@
-package selecao;
+package br.com.proway.evento;
 
 public class Salas {
 	

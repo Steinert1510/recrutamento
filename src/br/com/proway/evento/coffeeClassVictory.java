@@ -1,10 +1,8 @@
-package selecao;
+package br.com.proway.evento;
 
-public class coffeeClassHired {
+public class coffeeClassVictory {
 	
 	private String spaceName;
-	
-	
 	
 
 	public String getSpaceName() {
@@ -15,6 +13,5 @@ public class coffeeClassHired {
 		this.spaceName = spaceName;
 	}
 	
-	
-    
+
 }

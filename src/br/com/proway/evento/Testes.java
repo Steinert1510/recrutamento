@@ -1,4 +1,4 @@
-package selecao;
+package br.com.proway.evento;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
+
+import br.com.proway.evento.pessoas.AlunoNovo;
 
 public class Testes {
 

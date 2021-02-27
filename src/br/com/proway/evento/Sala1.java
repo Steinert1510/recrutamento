@@ -1,4 +1,4 @@
-package selecao;
+package br.com.proway.evento;
 
     public class Sala1 {
 	private String className;
