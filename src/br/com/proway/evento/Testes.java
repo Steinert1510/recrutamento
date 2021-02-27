@@ -33,9 +33,13 @@ public class Testes {
     
     coffeeClassHired hired = new coffeeClassHired();
     hired.setSpaceName(" SPACE HIRED ");
+    hired.setQtdMaxPeaple(8);
+    hired.setQtdActualPeaple(0);
     
     coffeeClassVictory victory = new coffeeClassVictory();
     victory.setSpaceName(" SPACE  VICTORY ");
+    victory.setQtdMaxPeaple(8);
+    victory.setQtdActualPeaple(0);
     
     
     List<String> lista = new ArrayList<String>();
@@ -56,7 +60,7 @@ public class Testes {
     
     
 		int op=0;
-		   
+		int num=0;  
 		   
 		while(op<=6) {
 			   System.out.println("Evento seletivo");
@@ -89,7 +93,7 @@ public class Testes {
 			if(op==3) {
 				
 				int x1=0;
-				System.out.println("Deseja Adicionar café 1-sim 2-não");
+				System.out.println("Deseja Adicionar espaço café 1-sim 2-não");
 				x1=scan.nextInt();
 				if(x1==1) {
 					System.out.println("entre com o nome do espaçoCafé");
@@ -106,43 +110,70 @@ public class Testes {
 				
 				for(int i=0; i<=4; i++) {
 					System.out.println(lista.get(i));
+					//System.out.println("Espaço café "+ hired.getSpaceName());
 				}
 				System.out.println();
 				System.out.println("*****  SALA:"+sal2.getClassName()+"  PARTICIPANTES ****");
 				
-				for(int j=0; j<=5; j++) {
+				for(int j=5; j<=10; j++) {
 					System.out.println(lista.get(j));
-					
+					//System.out.println("Espaço café : "+victory.getSpaceName());
+			
 				}
-				//System.out.println();
+				System.out.println();
 				//sorteio de pessoas
-				  
-		
 						
 			}
 			if(op==5) {
-				
-                System.out.println("*****  SPACE:"+hired.getSpaceName()+"   ****");
-				
-				for(int i=0; i<=4; i++) {
-					System.out.println(lista.get(i));
-				}
-				System.out.println();
-				System.out.println("*****  SPACE:"+victory.getSpaceName()+"  ****");
-				
-				for(int j=0; j<=5; j++) {
-					System.out.println(lista.get(j));
+				while(num <=2) {
+					System.out.println("1- Quantidade de pessoas 2- Nome das Pessoas 3- Sair");
+					num=scan.nextInt();
 					
+					
+				if(num==1) {
+					
+					System.out.println("informe a qtd da lista para sala 1");
+				    hired.setQtdActualPeaple(scan.nextInt());
+	     
+				      if(hired.getQtdActualPeaple() <= hired.getQtdMaxPeaple()) {
+				    	  System.out.println("Acesso permitido - bom coffeBreak");
+				      }else {
+				    	  System.out.println("Acesso negado- Excesso de pessoas!");
+				      }
+				    
+					System.out.println("informe a quantidade da lista para sala 2");
+					victory.setQtdActualPeaple(scan.nextInt());
+					
+					 if(victory.getQtdActualPeaple() <= victory.getQtdMaxPeaple()) {
+				    	  System.out.println("Acesso permitido - bom coffeBreak");
+				      }else {
+				    	  System.out.println("Acesso negado- Excesso de pessoas!");
+				      }
+					
+					System.out.println(victory.getQtdActualPeaple());
+				
 				}
-				System.out.println();	
+				if(num==2) {
+					System.out.println("*****  SPACE:"+hired.getSpaceName()+"   ****");
+					
+					for(int i=0; i<=4; i++) {
+						System.out.println(lista.get(i));
+					}
+					System.out.println();
+					System.out.println("*****  SPACE:"+victory.getSpaceName()+"  ****");
+					
+					for(int j=5; j <= 10; j++) {
+						System.out.println(lista.get(j));
+						
+					}
 				
+				}
 				
+			}//fim do while if(num==5)
 				
-			}
-			System.out.println();
-		}
-
-	
-
+			}// fim do if(op==5)
+		
+		}//fim do while menu principal
+		
 	}
 }
