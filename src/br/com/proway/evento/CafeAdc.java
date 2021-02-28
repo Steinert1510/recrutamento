@@ -2,17 +2,41 @@ package br.com.proway.evento;
 
 public class CafeAdc {
 	
-	private String nome;
+	private int id;
+	private String spaceName;
+	private int qtdMaxPeaple;
+	private int qtdActualPeaple;
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getSpaceName() {
+		return spaceName;
+	}
+	public void setSpaceName(String spaceName) {
+		this.spaceName = spaceName;
+	}
+	public int getQtdMaxPeaple() {
+		return qtdMaxPeaple;
+	}
+	public void setQtdMaxPeaple(int qtdMaxPeaple) {
+		this.qtdMaxPeaple = qtdMaxPeaple;
+	}
+	public int getQtdActualPeaple() {
+		return qtdActualPeaple;
+	}
+	public void setQtdActualPeaple(int qtdActualPeaple) {
+		this.qtdActualPeaple = qtdActualPeaple;
+	}
+	
 	
 	
 
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	
 	
 

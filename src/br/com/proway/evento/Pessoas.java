@@ -9,25 +9,20 @@ public class Pessoas {
 	 
 	 private String firstName;
 	 private String lastName;
-	 private int qtdPeaple;
-	 private Pessoas[] pessoas;
-	 
-	 
+	 private int id;
 	 
 	 
 	 
 	
-	public Pessoas[] getPessoas() {
-		return pessoas;
+	 
+	 
+	 
+	 
+	public int getId() {
+		return id;
 	}
-	public void setPessoas(Pessoas[] pessoas) {
-		this.pessoas = pessoas;
-	}
-	public int getQtdPeaple() {
-		return qtdPeaple;
-	}
-	public void setQtdPeaple(int qtdPeaple) {
-		this.qtdPeaple = qtdPeaple;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getFirstName() {
 		return firstName;

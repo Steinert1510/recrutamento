@@ -3,8 +3,17 @@ package br.com.proway.evento;
     public class Sala1 {
 	private String className;
 	private int qtdPessoas;
+	private int id;
 	
 	
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getClassName() {
 		return className;
 	}

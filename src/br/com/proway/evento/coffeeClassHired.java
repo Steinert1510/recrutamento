@@ -5,12 +5,22 @@ public class coffeeClassHired {
 	private String spaceName;
 	private int qtdMaxPeaple;
 	private int qtdActualPeaple;
+	private int id;
 	
 	
 	
 	
 	
 	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public int getQtdActualPeaple() {
 		return qtdActualPeaple;
 	}

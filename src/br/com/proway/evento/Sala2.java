@@ -5,8 +5,18 @@ public class Sala2 {
 	  
 		private String className;
 		private int qtdPessoas;
+		private int id;
 		
 		
+		
+		
+		
+		public int getId() {
+			return id;
+		}
+		public void setId(int id) {
+			this.id = id;
+		}
 		public String getClassName() {
 			return className;
 		}
