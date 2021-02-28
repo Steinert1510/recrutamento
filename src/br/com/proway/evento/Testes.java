@@ -42,6 +42,8 @@ public class Testes {
     victory.setQtdActualPeaple(0);
     
     
+      
+    
     List<String> lista = new ArrayList<String>();
     
     lista.add("1-Maria Cloud");
@@ -52,11 +54,12 @@ public class Testes {
     lista.add("6-Claudia Abelha");
     lista.add("7-Carlos fumaça");
     lista.add("8-Jean Gumer");
-    lista.add("9-Roberto Grilo");
+    lista.add("9-Irineu Steinert");
     lista.add("10-Marina Manhoso");
     lista.add("11-Renata Gafanhoto");
     
     Collections.shuffle(lista);
+    
     
     
 		int op=0;
@@ -64,6 +67,7 @@ public class Testes {
 		   
 		while(op<=6) {
 			   System.out.println("Evento seletivo");
+			   System.out.println(localWeb.eventoCompleto);
 			   System.out.println("1- Cadastro Pessoa 2- Cadastro sala 3- cadastro café 4-visualizar Sala 5-visualizar cafe 6- Sair");
 				op=scan.nextInt();
 			
@@ -172,9 +176,9 @@ public class Testes {
 					System.out.println("*****  SALA:"+sal.getClassName()+"  PARTICIPANTES ****");
 					
 					for(int i=7; i<=10; i++) {
-						//for(int i=0; i<=2;i++) {
+						
 						System.out.println(lista.get(i));
-						//}
+						
 					}
 					System.out.println();
 					System.out.println("*****  SALA:"+sal2.getClassName()+"  PARTICIPANTES ****");
@@ -187,14 +191,16 @@ public class Testes {
 					System.out.println();
 						
 					}
-//					
+					
 				}
+				
 				
 			}//fim do while if(num==5)
 				
 			}// fim do if(op==5)
 		
-		}//fim do while menu principal
 		
+		}//fim do while menu principal
+	   
 	}
-//}
+
