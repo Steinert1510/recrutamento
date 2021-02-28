@@ -26,10 +26,15 @@ public class Testes {
     aluno.setSobrenome("");
 	
 	SalaNova nova = new SalaNova();
-    nova.setNomeSalaNova("");
+	nova.setId(0);
+    nova.setClassName("");
+    nova.setQtdPessoas(0);
     
     CafeAdc cafe =new CafeAdc();
-    cafe.setNome("");
+    cafe.setId(0);
+    cafe.setSpaceName("");
+    cafe.getQtdMaxPeaple();
+    cafe.getQtdActualPeaple();
     
     coffeeClassHired hired = new coffeeClassHired();
     hired.setSpaceName(" SPACE HIRED ");
@@ -88,8 +93,8 @@ public class Testes {
 				x=scan.nextInt();
 				if(x==1) {
 					System.out.println("entre com o nome da sala");
-		                nova.setNomeSalaNova(scan.next());	
-		                System.out.println("Sala nova: "+ nova.getNomeSalaNova());
+		                nova.setClassName(scan.next());	
+		                System.out.println("Sala nova: "+ nova.getClassName());
 				}else {
 					System.out.println();
 				}
@@ -101,8 +106,8 @@ public class Testes {
 				x1=scan.nextInt();
 				if(x1==1) {
 					System.out.println("entre com o nome do espaçoCafé");
-		                cafe.setNome(scan.next());	
-		                System.out.println("Espaço Café nome: "+ cafe.getNome());
+		                cafe.setSpaceName(scan.next());	
+		                System.out.println("Espaço Café nome: "+ cafe.getSpaceName());
 				}else {
 					System.out.println();
 				}
@@ -175,7 +180,7 @@ public class Testes {
 				if(num==3) {
 					System.out.println("*****  SALA:"+sal.getClassName()+"  PARTICIPANTES ****");
 					
-					for(int i=7; i<=10; i++) {
+					for(int i=5; i<=10; i++) {
 						
 						System.out.println(lista.get(i));
 						
