@@ -44,17 +44,17 @@ public class Testes {
     
     List<String> lista = new ArrayList<String>();
     
-    lista.add("Maria Cloud");
-    lista.add("Debora Sotu");
-    lista.add("renato Sozinho");
-    lista.add("Vitorino Vencedor");
-    lista.add("Lutador venceslau");
-    lista.add("Claudia Abelha");
-    lista.add("Carlos fumaça");
-    lista.add("Jean Gumer");
-    lista.add("Roberto Grilo");
-    lista.add("Marina Manhoso");
-    lista.add("Renata Gafanhoto");
+    lista.add("1-Maria Cloud");
+    lista.add("2-Debora Sotu");
+    lista.add("3-Renato Sozinho");
+    lista.add("4-Vitorino Vencedor");
+    lista.add("5-Lutador venceslau");
+    lista.add("6-Claudia Abelha");
+    lista.add("7-Carlos fumaça");
+    lista.add("8-Jean Gumer");
+    lista.add("9-Roberto Grilo");
+    lista.add("10-Marina Manhoso");
+    lista.add("11-Renata Gafanhoto");
     
     Collections.shuffle(lista);
     
@@ -110,14 +110,14 @@ public class Testes {
 				
 				for(int i=0; i<=4; i++) {
 					System.out.println(lista.get(i));
-					//System.out.println("Espaço café "+ hired.getSpaceName());
+					
 				}
 				System.out.println();
 				System.out.println("*****  SALA:"+sal2.getClassName()+"  PARTICIPANTES ****");
 				
 				for(int j=5; j<=10; j++) {
 					System.out.println(lista.get(j));
-					//System.out.println("Espaço café : "+victory.getSpaceName());
+					
 			
 				}
 				System.out.println();
@@ -125,8 +125,8 @@ public class Testes {
 						
 			}
 			if(op==5) {
-				while(num <=2) {
-					System.out.println("1- Quantidade de pessoas 2- Nome das Pessoas 3- Sair");
+				while(num <=3) {
+					System.out.println("1- Quantidade de pessoas 2- Nome das Pessoas 3-TrocaSala 4- Sair");
 					num=scan.nextInt();
 					
 					
@@ -168,6 +168,27 @@ public class Testes {
 					}
 				
 				}
+				if(num==3) {
+					System.out.println("*****  SALA:"+sal.getClassName()+"  PARTICIPANTES ****");
+					
+					for(int i=7; i<=10; i++) {
+						//for(int i=0; i<=2;i++) {
+						System.out.println(lista.get(i));
+						//}
+					}
+					System.out.println();
+					System.out.println("*****  SALA:"+sal2.getClassName()+"  PARTICIPANTES ****");
+					
+					for(int j=0; j<=4; j++) {
+						System.out.println(lista.get(j));
+						
+				
+					}
+					System.out.println();
+						
+					}
+//					
+				}
 				
 			}//fim do while if(num==5)
 				
@@ -176,4 +197,4 @@ public class Testes {
 		}//fim do while menu principal
 		
 	}
-}
+//}
